@@ -14,7 +14,7 @@ To setup the db you'll need to get into the container to run a script
 
 To get inside the container `docker compose exec [containerId] sh`
 
-Then run `node ./bin/migrate.ts`
+Then run `node ./bin/migrate.js`
 
 To stop the running container without destroying it `docker compose stop`
 
