@@ -20,4 +20,4 @@ To stop the running container without destroying it `docker compose stop`
 
 To stop the running container and destroy them `docker compose down`
 
-It will be available at `localhost:3000` and `http://localhost:3000/persons/all`
+It will be available at `localhost:8020` and `http://localhost:8020/persons/all`
