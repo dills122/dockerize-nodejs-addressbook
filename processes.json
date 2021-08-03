@@ -1,0 +1,15 @@
+{
+    "apps": [{
+        "name": "api",
+        "script": "./bin/www.js",
+        "merge_logs": true,
+        "max_restarts": 20,
+        "instances": "max",
+        "exec_mode": "cluster",
+        "max_memory_restart": "200M",
+        "env": {
+            "PORT": 3000,
+            "NODE_ENV": "production"
+        }
+    }]
+}
