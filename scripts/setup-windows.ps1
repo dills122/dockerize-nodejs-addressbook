@@ -1,9 +1,3 @@
-#!/bin/bash
-
-set -e
-
-# Note: update /etc/hosts separately, may require sudo privileges
-
 # Install mkcert, assumes brew already installed
 choco install mkcert
 

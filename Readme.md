@@ -32,18 +32,14 @@ You'll need to install some packages using `Chocolatey`, you can download it fro
 
 Once you have verified `Chocolatey` is installed, you'll need to execute a few scripts.
 
-To run the first script pop open `cmd` or `powershell`
+You'll need to run these scripts as an administrator, this script will open a new `powershell` as an administrator in the current directory
 
 ```powershell
-pwsh.exe -ExecutionPolicy Unrestricted
+Start-Process powershell -Verb runas -ArgumentList "-NoExit -c cd '$pwd'"
 ```
-
-More Info on Execution Policies [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1)
-
-This will set your `powershell` execution policy to Unrestricted for only the session. This allows us to run unsigned scripts.
 
 Execute `configure-hosts-windows.ps1` to configure your custom domain name in host.
 
-Once that has been configured you'll need to finish the setup by loading `Git Bash`.
+If you get an error related to Execution Policies you can learn more [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1)
 
-Execute `setup-windows.sh` to finish setting up the apps and generate the certs you need
+Execute `setup-windows.ps1` to finish setting up the apps and generate the certs you need
