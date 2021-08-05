@@ -14,13 +14,15 @@ To setup the db you'll need to get into the container to run a script
 
 To get inside the container `docker compose exec [containerId] sh`
 
-Then run `node ./bin/migrate.ts`
+Then run `node ./bin/migrate.js`
 
 To stop the running container without destroying it `docker compose stop`
 
 To stop the running container and destroy them `docker compose down`
 
-It will be available at `localhost:3000` and `http://localhost:3000/persons/all`
+It will be available at the un-proxyed site `localhost:3000` and `http://localhost:3000/persons/all`
+
+and your new custom URL `https://myapp.local`
 
 ## SSL Setup
 
