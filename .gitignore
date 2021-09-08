@@ -71,3 +71,5 @@ types/
 **/types/
 
 package-lock.json
+
+certs/
